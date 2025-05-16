@@ -1,20 +1,3 @@
-<<<<<<< HEAD
-import {user} from "./models/user";
-import "reflect-metadata";
-import {DataSource} from "typeorm";
-import {view} from "./models/view";
-
-export const AppDataSource = new DataSource({
-    type: "sqlite",
-    database: "db.sqlite",
-    synchronize: true,
-    logging: true,
-    entities: [user, view],
-    migrations: [],
-    subscribers: [],  
-    }
-)
-=======
 import "reflect-metadata";
 import { DataSource } from "typeorm";
 import { pago } from "./models/pago";
@@ -34,4 +17,3 @@ export const AppDataSource = new DataSource({
     subscribers: [],
 });
 
->>>>>>> aefb01e (practica semana 4 modulo de pagos)
